@@ -1,0 +1,82 @@
+/**
+ * Hide elements in an accessible way
+ *
+ * Usage: @include visually-hidden();
+ */
+
+@mixin visually-hidden {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+
+/**
+ * Clear floats
+ *
+ * Usage: @include clearfix();
+ */
+
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: '';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/**
+ * Hide text in an accessible way.
+ *
+ * Usage: @include hide-text();
+ */
+
+@mixin hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+
+/**
+ * Truncates text and adds ellipsis
+ * (works best in use with inline-block)
+ *
+ * Usage: @include text-truncate();
+ */
+
+ @mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/**
+ * Generate a font-size and baseline-compatible line-height.
+ *
+ * Usage: @include(font size in pixels, optionaly you can specify a specific line-height);
+ */
+
+@mixin font-size($font-size, $line-height: auto) {
+    font-size: ($font-size / $global-font-size) * 1rem;
+    @if ($line-height=='auto') {
+        line-height: ceil($font-size / $global-line-height) * ($global-line-height / $font-size);
+    }
+    @else {
+        @if (type-of($line-height)==number or $line-height=='inherit' or $line-height=='normal') {
+            line-height: $line-height;
+        }
+    }
+}

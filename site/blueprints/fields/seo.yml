@@ -1,0 +1,19 @@
+type: group
+fields:
+  seo_title:
+    label: Alternative title
+    type: text
+    help: Overwrites the title of the website. Will only be displayed in the title tag.
+  seo_description:
+    label: Short description
+    type: textarea
+    buttons: false
+    size: small
+    maxlength: 300
+    help: Short snippet of up to 300 characters which summarizes your website. Will be used as a fallback when a page has no description.
+  seo_cover:
+    label: Cover image
+    type: files
+    multiple: false
+    query: site.images
+    uploads: false

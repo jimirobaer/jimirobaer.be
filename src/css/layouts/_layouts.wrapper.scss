@@ -1,0 +1,76 @@
+/*
+ *  Layout: Wrapper
+ *  ---
+ *  Class to wrap content
+ */
+
+ .l-wrapper {
+    max-width: $wrapper-width;
+    @media (max-width: $wrapper-width + $global-spacing-unit-large) {
+        padding-left: $global-spacing-unit-large !important;
+        padding-right: $global-spacing-unit-large !important;
+        max-width: 100%;
+    }
+    @include media("<large") {
+        padding-left: $global-spacing-unit-medium !important;
+        padding-right: $global-spacing-unit-medium !important;
+    }
+    @include media("<medium") {
+        padding-left: $global-spacing-unit !important;
+        padding-right: $global-spacing-unit !important;
+    }
+}
+
+.l-wrapper-wrapped {
+    max-width: calc(#{$wrapper-width} + 8rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+ * Wrapper without padding
+ */
+
+.l-wrapper-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/**
+ * Large wrapper variation
+ */
+
+.l-wrapper-small {
+    max-width: $wrapper-width - ($global-spacing-unit-huge * 2);
+}
+
+
+/**
+ * Large wrapper variation
+ */
+
+.l-wrapper-large {
+    max-width: $wrapper-width + ($global-spacing-unit-huge * 2);
+}
+
+
+/**
+ * Center wrapper
+ */
+
+.l-wrapper-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+ * Wrapper variation for whitespaces on right and left edge of screen
+ */
+
+.l-wrapper-large-whitespace {
+    padding-left: $global-spacing-unit-large;
+    padding-right: $global-spacing-unit-large;
+}

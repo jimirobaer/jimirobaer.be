@@ -1,0 +1,20 @@
+/*
+ *  Elements: page
+ *  ---
+ *  Simple page-level setup.
+ */
+
+body {
+    font-family: $primary-font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: ($global-font-size / 16px) * 1em;
+    color: palette(color-base, base);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &:not(.wf-active) {
+        font-family: $fallback-font-family;
+    }
+}

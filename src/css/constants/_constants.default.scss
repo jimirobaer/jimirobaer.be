@@ -1,0 +1,75 @@
+/*
+ *  Default Settings
+ *  ---
+ *  Only override the !default variables in '_constants.project.scss' to suit your project needs
+ */
+
+$global-font-size: 18px !default;
+$global-line-height: 26px !default;
+
+/**
+ * Breakpoints
+ */
+
+$breakpoints: ( small: 30em, medium: 62em, large: 75em) !default;
+
+/**
+ * Font families
+ */
+$fallback-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$primary-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$secondary-font-family: $primary-font-family !default;
+
+/**
+ * Font weights
+ */
+$light: 300 !default;
+$normal: 400 !default;
+$semibold: 600 !default;
+$bold: 700 !default;
+$extrabold: 800 !default;
+$black: 900 !default;
+
+/**
+ * Font sizes
+ */
+$font-size-h1: 36px !default;
+$font-size-h2: 28px !default;
+$font-size-h3: 24px !default;
+$font-size-h4: 20px !default;
+$font-size-h5: 18px !default;
+$font-size-h6: 16px !default;
+$font-size-tiny: 12px !default;
+$font-size-small: 16px !default;
+$font-size-default: $global-font-size !default;
+$font-size-large: 24px !default;
+$font-size-huge: 48px !default;
+
+/*
+ * Spacing values are determined based on your project’s global line height (i.e
+ * your baseline grid). It is not recommended that you modify these following
+ * variables (it can break your vertical rhythm), but if you need to, you can.
+ */
+$global-spacing-unit: round($global-line-height) !default;
+
+/**
+ * Wrapper
+ */
+$wrapper-width: 1600px !default;
+$wrapper-gutter: $global-spacing-unit !default;
+
+/*
+ * How many times larger/smaller than the default should our spacing unit
+ * variants be?
+*/
+$global-spacing-unit-factor-tiny: 0.25 !default;
+$global-spacing-unit-factor-small: 0.5 !default;
+$global-spacing-unit-factor-medium: 1.75 !default;
+$global-spacing-unit-factor-large: 2.5 !default;
+$global-spacing-unit-factor-huge: 4 !default;
+
+/**
+ * Z-indexes
+ */
+
+$z-indexes: ( alpha: 1, bravo: 2, charlie: 3, delta: 4, echo: 5) !default;

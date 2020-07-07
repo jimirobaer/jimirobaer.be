@@ -1,0 +1,33 @@
+/**
+ * The palette function works with a base color and a tint.
+ * Reads from '_constants.colors.scss'
+ *
+ * Usage: palette(color-alpha,base)
+ */
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+
+
+/**
+ * Convert any px value into its rem equivalent.
+ *
+ * Usage: rem(number);
+ */
+
+@function rem($number) {
+    @return $number / $global-font-size * 1rem;
+}
+
+
+/**
+ * Defines global-spacing units
+ * Used in '_utilities/spacing.scss'.
+ */
+
+$global-spacing-unit-tiny: round($global-spacing-unit * $global-spacing-unit-factor-tiny);
+$global-spacing-unit-small: round($global-spacing-unit * $global-spacing-unit-factor-small);
+$global-spacing-unit-medium: round($global-spacing-unit * $global-spacing-unit-factor-medium);
+$global-spacing-unit-large: round($global-spacing-unit * $global-spacing-unit-factor-large);
+$global-spacing-unit-huge: round($global-spacing-unit * $global-spacing-unit-factor-huge);

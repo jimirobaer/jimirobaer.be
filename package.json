@@ -1,0 +1,50 @@
+{
+	"name": "k3-boilerplate",
+	"version": "1.0.0",
+	"description": "Kirby 3 Boilerplate",
+	"main": "gulpfile.js",
+	"author": {
+		"name": "Lonely Alien",
+		"url": "https://www.lonelyalien.com"
+	},
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 0.25%"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"autoprefixer": "9.6.1",
+		"browser-sync": "2.26.7",
+		"cssnano": "4.1.10",
+		"del": "3.0.0",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-clip-empty-files": "^0.1.2",
+		"gulp-combine-mq": "^0.4.0",
+		"gulp-concat": "2.6.1",
+		"gulp-flatmap": "1.0.2",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-header": "2.0.5",
+		"gulp-jshint": "2.1.0",
+		"gulp-optimize-js": "1.1.0",
+		"gulp-postcss": "8.0.0",
+		"gulp-rename": "1.4.0",
+		"gulp-sass": "4.0.2",
+		"gulp-sass-glob": "^1.1.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-svgmin": "2.1.0",
+		"gulp-terser": "1.1.7",
+		"gulp-util": "^3.0.8",
+		"jshint": "2.9.6",
+		"jshint-stylish": "2.2.1",
+		"lazypipe": "1.0.1",
+		"node-sass": "4.13.0"
+	},
+	"dependencies": {}
+}

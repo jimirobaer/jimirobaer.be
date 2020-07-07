@@ -1,0 +1,107 @@
+/*
+ *  Helpers
+ *  ---
+ *  A set of helper classes
+ */
+
+// Alignment
+.u-text-justify {
+    text-align: justify !important;
+}
+
+.u-text-nowrap {
+    white-space: nowrap !important;
+}
+
+.u-text-left {
+    text-align: left !important;
+}
+
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+// Text truncate
+// Requires inline-block or block for proper styling
+.u-text-truncate {
+    @include text-truncate();
+}
+
+// Transformation
+.u-transform-none {
+    text-transform: none !important;
+}
+
+.u-text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.u-text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.u-text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.u-text-strike {
+    text-decoration: line-through !important;
+}
+
+// Font styles
+.u-font-italic {
+    font-style: italic !important;
+}
+
+.u-center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Positions
+.u-relative {
+    position: relative !important;
+}
+
+.u-absolute {
+    position: absolute !important;
+}
+
+.u-left {
+    left: 0 !important;
+}
+
+.u-bottom {
+    bottom: 0 !important;
+}
+
+// Box model
+.u-border-box {
+    box-sizing: border-box !important;
+}
+
+// Inline block
+.u-inline-block {
+    display: inline-block !important;
+}
+
+.u-block {
+    display: block !important;
+}
+
+.u-align-middle {
+    vertical-align: middle !important;
+}
+
+.u-overflow-hidden {
+    overflow: hidden !important;
+}
+
+.u-max-width {
+    max-width: 100% !important;
+}

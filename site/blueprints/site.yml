@@ -1,0 +1,167 @@
+title: Site
+
+tabs:
+  content:
+    label: Pages
+    icon: text
+    preset: pages
+    unlisted: true
+  seo:
+    label: Global SEO
+    icon: file-text
+    columns:
+      seo_left:
+        width: 2/3
+        sections:
+          seo_content:
+            type: fields
+            fields:
+              seo: fields/seo
+              seo_author:
+                label: Author
+                type: text
+                icon: user
+                width: 1/2
+              seo_favicon:
+                label: Favicon
+                type: files
+                multiple: false
+                width: 1/2
+                query: site.images
+                uploads: false
+                # help: Upload a file in the highest resolution possible, preferably (larger than) 192x192 pixels in size. Appropriate sizes will be generated automatically.
+      seo-right:
+        width: 1/3
+        sections:
+          seo_sidebar:
+            type: files
+            headline: Files
+  settings:
+    label: Website Settings
+    icon: settings
+    columns:
+      settings_left:
+        width: 2/3
+        sections:
+          settings_general:
+            type: fields
+            fields:
+              general_headline:
+                label: General
+                type: headline
+                numbered: false
+              site_url:
+                label: Site URL
+                type: text
+                icon: url
+                width: 1/2
+                placeholder: domain.com
+              site_index:
+                label: Status
+                type: select
+                options:
+                  noindex: Do not publish
+                  index: Published
+                default: noindex
+                help: Toggle indexing of your website by search engines
+                width: 1/2
+              site_email:
+                label: Email address
+                type: email
+                width: 1/2
+              site_phone:
+                label: Phone number
+                type: tel
+                width: 1/2
+              site_address:
+                label: Address
+                type: structure
+                fields:
+                  address-street:
+                    label: Address line 1
+                    type: text
+                  address-line-2:
+                    label: Address line 2
+                    type: text
+                  address-zip:
+                    label: Postal code
+                    type: text
+                  address-city:
+                    label: City/Town
+                    type: text
+                  address-country:
+                    label: Country
+                    type: text
+          cookie_content:
+            type: fields
+            fields:
+              cookie_headline:
+                label: Cookie Banner
+                type: headline
+                numbered: false
+              cookie_status:
+                label: Status
+                type: select
+                options:
+                  false: Disable
+                  true: Enable
+                default: false
+                width: 1/2
+              cookie_policy:
+                label: Select Cookie Policy Page
+                type: pages
+                multiple: false
+                subpages: false
+                width: 1/2
+              cookie_style_background:
+                label: Background Color
+                type: color
+                width: 1/2
+              cookie_style_button:
+                label: Button Color
+                type: color
+                width: 1/2
+              cookie_text:
+                label: Description
+                type: textarea
+                buttons: false
+                size: small
+                default: "This website uses cookies. By clicking 'I agree', you give your permission for cookies to be set."
+              cookie_text_consent:
+                label: Text "Consent"
+                type: text
+                default: "Allow"
+                width: 1/3
+              cookie_text_no_consent:
+                label: Text "No consent"
+                type: text
+                default: "Deny"
+                width: 1/3
+              cookie_text_info:
+                label: Text "More info"
+                type: text
+                default: "More info"
+                width: 1/3
+          advanced_content:
+            type: fields
+            fields:
+              advanced_headline:
+                label: Advanced
+                type: headline
+                numbered: false
+              advanced_google_search:
+                label: Google Search Console Verification Meta Tag
+                type: text
+                icon: tag
+                width: 1/2
+              advanced_google_tm:
+                label: Google Tag Manager ID
+                type: text
+                icon: tag
+                width: 1/2     
+      settings_right:
+        width: 1/3
+        sections:
+          settings_files:
+            type: files
+            headline: Files

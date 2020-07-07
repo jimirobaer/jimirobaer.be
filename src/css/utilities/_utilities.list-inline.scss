@@ -1,0 +1,15 @@
+/*
+ *  Utilities: Inline list
+ *  ---
+ *  Utility to easily inline list items
+ */
+
+.u-list-inline,
+%u-list-inline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    >li {
+        display: inline-block;
+    }
+}
