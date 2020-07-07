@@ -1,0 +1,14 @@
+.o-figure {
+
+    &.--style {
+
+        &-no-top-margin {
+            margin-top: 0;
+        }
+
+        &-medium-bottom-margin {
+            margin-bottom: 2rem;
+        }
+    }
+
+}

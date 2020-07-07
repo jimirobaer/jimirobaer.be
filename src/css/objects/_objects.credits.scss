@@ -1,0 +1,15 @@
+.o-credits {
+
+    &.--type {
+        &-post {}
+
+        &-site {
+            display: none;
+
+            @include media('>medium') {
+                display: block;
+            }
+        }
+    }
+
+}

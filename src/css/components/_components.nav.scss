@@ -1,0 +1,100 @@
+/*
+ *  Components: Nav
+ *  ---
+ *  Nav content containers
+ */
+
+
+.c-nav {
+
+    display: flex;
+    align-items: center;
+
+    min-height: 4rem;
+    padding: 0 1.75rem;
+    
+    @include media('>small') {
+        min-height: 6rem;
+        padding: 0 3rem; 
+    }
+
+    @include media('>large') {
+        min-height: 6rem;
+        padding: 0 6rem;
+    }
+
+    &__item {
+
+        font-size: $font-size-small;
+
+        @include media('>small') {
+            font-size: $font-size-h5;
+        }
+
+        color: $color-base;
+
+        text-decoration: none;
+
+        &.--state {
+
+            &-active {
+                color: $color-base;
+                text-decoration: underline;
+            }
+
+            &-hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        &.--size {
+            &-inherit {
+                font-size: inherit;
+            }
+        }
+
+        &:hover {
+            color: palette(color-base, light);
+        }
+
+    }
+
+    &__breadcrumb {
+
+        &:not(:last-child) {
+            margin-right: $global-spacing-unit-medium;
+        }
+
+    }
+
+    &.--justify {
+
+        &-between {
+            justify-content: space-between;
+        }
+
+    }
+
+    &.--outline {
+
+        &-top {
+            border-top: 2px solid $color-base;
+        }
+
+        &-bottom {
+            border-bottom: 2px solid $color-base;
+        }
+
+        &-left {
+            border-left: 2px solid $color-base;
+        }
+
+        &-right {
+            border-right: 2px solid $color-base;
+        }
+
+
+    }
+
+}

@@ -4,22 +4,22 @@
  *  A set of font sizing helper classes
  */
 
-.u-font-tiny{
-  @include font-size($font-size-tiny);
+.u-font-tiny {
+    @include font-size($font-size-tiny);
 }
 
-.u-font-small{
-  @include font-size($font-size-small);
+.u-font-small {
+    @include font-size($font-size-small);
 }
 
-.u-font-default{
-  @include font-size($font-size-default);
+.u-font-default {
+    @include font-size($font-size-default);
 }
 
-.u-font-large{
-  @include font-size($font-size-large);
+.u-font-large {
+    @include font-size($font-size-large);
 }
 
-.u-font-huge{
-  @include font-size($font-size-huge);
+.u-font-huge {
+    @include font-size($font-size-huge);
 }

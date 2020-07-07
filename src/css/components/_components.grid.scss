@@ -1,0 +1,63 @@
+/*
+ *  Components: Grid
+ *  ---
+ *  Simple CSS Grid-based grid
+ */
+
+.c-grid {
+
+    display: grid;
+
+    &.--split {
+
+        grid-template-columns: 1fr;
+
+        @include media('>medium') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+}
+
+.c-grid__wrapper {
+
+    &.--type {
+        &-sticky {
+            position: sticky;
+            top: 0;
+        }
+    }
+
+}
+
+.c-grid__item {
+
+    &.--outline {
+
+        &-top {
+            border-top: 2px solid $color-base;
+        }
+
+        &-bottom {
+            border-bottom: 2px solid $color-base;
+        }
+
+        &-left {
+            border-left: 2px solid $color-base;
+        }
+
+        &-right {
+            border-right: 2px solid $color-base;
+        }
+
+
+    }
+
+    &.--highlight {
+
+        background-color: palette(color-base, x-light);
+
+    }
+
+}

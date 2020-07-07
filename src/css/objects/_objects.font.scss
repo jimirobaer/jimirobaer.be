@@ -1,0 +1,17 @@
+/*
+ *  Objects: Font
+ *  ---
+ *  Assign font families
+ */
+
+.o-font {
+
+    &.--primary {
+        font-family: $primary-font-family;
+    }
+
+    &.--secondary {
+        font-family: $secondary-font-family;
+    }
+
+}

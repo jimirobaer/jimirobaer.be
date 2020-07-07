@@ -12,9 +12,8 @@ $color-base: #000000;
 // Palettes
 $palettes: (
     color-base: (
-        x-light : hsl(hue($color-base), 0, 80),
-        light : hsl(hue($color-base), 0, 60),
-        base : $color-base,
-        dark : hsl(hue($color-base), 0, 0)
+        x-light: hsl(hue($color-base), 0, 95),
+        light: hsl(hue($color-base), 0, 50),
+        base: $color-base,
     )
 );

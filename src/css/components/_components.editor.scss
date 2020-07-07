@@ -1,0 +1,104 @@
+/*
+ *  Components: Editor
+ *  ---
+ *  Rules styling Kirby editor output
+ */
+
+.c-editor {
+
+    &__output {
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            @include font-size($font-size-h4);
+            margin-bottom: $global-spacing-unit-medium;
+            margin-top: $global-spacing-unit-large;
+
+            @include media('>small') {
+                @include font-size($font-size-h3);
+            }
+
+        }
+
+        blockquote {
+            margin: 64px 0;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 36px 0;
+        }
+
+        figure {
+            margin: 64px 0;
+        }
+
+        a,
+        a:visited {
+            color: $color-base;
+        }
+
+        a:hover {
+            color: palette(color-base, light);
+        }
+
+        &.--style {
+
+            &-resume,
+            &-cases {
+
+                @include font-size($font-size-h5, 36px);
+
+                @include media('>medium') {
+                    p {
+                        @include font-size($font-size-large);
+                    }
+                }
+
+            }
+
+            &-case,
+            &-default {
+
+                p {
+                    @include font-size($font-size-h5, 36px);
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+    &__group {
+
+        margin-bottom: 5rem;
+
+        @include media('>large') {
+            margin-bottom: 6rem;
+        }
+
+    }
+
+    &__title {
+
+        @include font-size($font-size-h3, 1.5);
+
+        @include media('>small') {
+            @include font-size($font-size-h2, 1.5);
+        }
+
+        @include media('>large') {
+            @include font-size($font-size-h1);
+        }
+        
+    }
+
+}

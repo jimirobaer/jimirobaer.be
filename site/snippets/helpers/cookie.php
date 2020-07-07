@@ -1,4 +1,4 @@
-<?php if($site->cookie_status() == true): ?>
+<?php if($site->cookie_status()->isTrue()): ?>
 
 <?php if($type == 'css'): ?>
 <?php echo css('https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css'); ?>

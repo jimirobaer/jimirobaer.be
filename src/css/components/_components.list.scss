@@ -1,0 +1,27 @@
+/*
+ *  Components: List
+ *  ---
+ */
+
+.c-list {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+
+    &.--size {
+
+        &-large {
+            font-weight: 300;
+            grid-row-gap: 6rem;
+        }
+
+        &-medium {
+            grid-row-gap: 2rem;
+        }
+
+    }
+
+}

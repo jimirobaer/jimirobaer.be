@@ -287,8 +287,8 @@ var startServer = function (done) {
 
 // Reload the browser when files change
 var reloadBrowser = function (done) {
-	if (!config.reload) return done();
-	$.browserSync.reload();
+	// if (!config.reload) return done();
+	// $.browserSync.reload();
 	done();
 };
 
@@ -320,6 +320,6 @@ exports.default = series(
 // gulp watch
 exports.watch = series(
 	exports.default,
-	startServer,
+	// startServer,
 	watchSource
 );

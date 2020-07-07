@@ -13,54 +13,55 @@
  */
 
 .u-h1 {
-  @include font-size($font-size-h1);
+    @include font-size($font-size-h1);
 
-  &:only-child{
-    margin-bottom: 0;
-  }
+    &:only-child {
+        margin-bottom: 0;
+    }
 }
 
 
 .u-h2 {
-  @include font-size($font-size-h2);
+    @include font-size($font-size-h2);
 
-  &:only-child{
-    margin-bottom: 0;
-  }
+    &:only-child {
+        margin-bottom: 0;
+    }
+    
 }
 
 
 .u-h3 {
-  @include font-size($font-size-h3, 1.4);
+    @include font-size($font-size-h3, 1.4);
 
-  &:only-child{
-    margin-bottom: 0;
-  }
+    &:only-child {
+        margin-bottom: 0;
+    }
 }
 
 
 .u-h4 {
-  @include font-size($font-size-h4, 1.4);
+    @include font-size($font-size-h4, 1.4);
 
-  &:only-child{
-    margin-bottom: 0;
-  }
+    &:only-child {
+        margin-bottom: 0;
+    }
 }
 
 
 .u-h5 {
-  @include font-size($font-size-h5, 1.4);
+    @include font-size($font-size-h5, 1.4);
 
-  &:only-child{
-    margin-bottom: 0;
-  }
+    &:only-child {
+        margin-bottom: 0;
+    }
 }
 
 
 .u-h6 {
-  @include font-size($font-size-h6);
+    @include font-size($font-size-h6);
 
-  &:only-child{
-    margin-bottom: 0;
-  }
+    &:only-child {
+        margin-bottom: 0;
+    }
 }

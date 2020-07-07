@@ -3,3 +3,29 @@
  *  ---
  *  Only override the !default variables from '_constants.default.scss' to suit your project needs
  */
+
+$global-font-size: 16px;
+$global-font-scale: 1.333;
+
+$global-line-height: $global-font-size * $global-font-scale;
+
+$global-spacing-unit: round($global-line-height);
+
+/**
+ * Font families
+ */
+$primary-font-family: 'Signo',
+$fallback-font-family;
+$secondary-font-family: 'Inter',
+$fallback-font-family;
+
+/**
+ * Font sizes
+ */
+$font-size-h1: 64px;
+$font-size-h2: 48px;
+$font-size-h3: 36px;
+$font-size-h4: 28px;
+$font-size-h5: 21px;
+$font-size-large: 24px;
+$font-size-huge: $font-size-h1;

@@ -1,0 +1,50 @@
+/*
+ *  Objects: List
+ *  ---
+ *  Reusable list styles
+ */
+
+.o-list__item {
+
+    &.--size {
+
+        &-large {
+            @include font-size($font-size-h2);
+        }
+
+        &-medium {
+
+            @include font-size(18px, 36px);
+
+            @include media('>medium') {
+                @include font-size($font-size-h5, 36px);
+            }
+        }
+
+    }
+
+    &.--style {
+
+        &-reset {
+            list-style: none;
+        }
+
+        &-table {
+            border-bottom: 2px solid #e2e2e2;
+            padding: 1.5rem 0;
+
+            &:first-child {
+                border-top: 2px solid #e2e2e2;
+            }
+
+        }
+
+    }
+
+}
+
+.o-list__preheader {
+    color: palette(color-base, light);
+    margin-right: $global-spacing-unit;
+    font-style: italics;
+}
