@@ -86,3 +86,4 @@ dist/*
 # License
 # ---------------
 /site/config/.license
+*.sqlite
