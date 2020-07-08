@@ -16,6 +16,6 @@
     <?php snippet('helpers/assets', ['type' => 'css']) ?>
 
 </head>
-<body>
+<body class="--style-fade">
 
 <?php snippet('helpers/tagmanager', ['type' => 'noscript']) ?>

@@ -28,8 +28,16 @@ var Site = {
             },
             google: {
                 families: ['Inter:regular']
-            }
+            },
+            active: function () {
+                Site.init_viewport();
+            },
         });
+    },
+
+    init_viewport: function init_viewport() {
+        const viewportClass = document.querySelector('body');
+        viewportClass.classList.add('--state-loaded');
     }
 
 }

@@ -13,6 +13,23 @@ body {
 
     overflow-x: hidden;
     overflow-y: auto;
+
+    opacity: 0;
+
+    &.--style {
+
+        &-fade {
+            transition: 0.6s opacity cubic-bezier(.79,.14,.15,.86);
+        }
+        
+    }
+
+    &.--state {
+        &-loaded {
+            opacity: 1;
+        }
+    }
+
 }
 
 html {
