@@ -12,6 +12,13 @@ $global-line-height: $global-font-size * $global-font-scale;
 $global-spacing-unit: round($global-line-height);
 
 /**
+ * Breakpoints
+ */
+
+ $breakpoints: ( small: 30em, medium: 62em, large: 75em, huge: 90em);
+
+
+/**
  * Font families
  */
 $primary-font-family: 'Signo',

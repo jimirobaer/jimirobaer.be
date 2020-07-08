@@ -8,6 +8,10 @@
 
     &__output {
 
+        p {
+            font-weight: normal;
+        }
+
         h1 {
             margin-top: 0;
         }
@@ -95,7 +99,7 @@
             @include font-size($font-size-h2, 1.5);
         }
 
-        @include media('>large') {
+        @include media('>huge') {
             @include font-size($font-size-h1);
         }
         

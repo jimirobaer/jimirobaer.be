@@ -12,6 +12,9 @@
             <?php endif ?>
             <?php echo $case->title() ?>
         </a>
+        <div class="c-editor__output --style-case">
+            <p><?php echo $case->case_introduction()->excerpt(120) ?></p>
+        </div>
     </li>
     <?php endforeach ?>
 
