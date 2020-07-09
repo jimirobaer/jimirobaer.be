@@ -32,11 +32,13 @@
             <?php snippet('pages/section.resume') ?>
             <?php endif ?>
 
+            <?php if($page->case_credits()->isNotEmpty()): ?>
             <div class="c-credits">
                 <div class="o-font --secondary u-font-tiny">
                     <?php echo $page->case_credits()->kirbytextinline() ?>
                 </div>
             </div>
+            <?php endif ?>
 
         </div>
 
