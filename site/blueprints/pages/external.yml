@@ -1,0 +1,10 @@
+title: External
+tabs:
+  content:
+    label: Pages
+    icon: text
+    preset: page
+    fields:
+      external_url:
+        label: URL
+        type: url

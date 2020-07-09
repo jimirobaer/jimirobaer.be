@@ -15,6 +15,11 @@ var Site = {
         Site.webfont_loader();
     },
 
+    load_website: function load_website() {
+        Site.init_viewport();
+        Site.create_external_links();
+    },
+
     webfont_loader: function webfont_loader() {
 
         /**
@@ -30,7 +35,7 @@ var Site = {
                 families: ['Inter:regular']
             },
             active: function () {
-                Site.init_viewport();
+                Site.load_website();
             },
         });
     },
@@ -38,6 +43,35 @@ var Site = {
     init_viewport: function init_viewport() {
         const viewportClass = document.querySelector('body');
         viewportClass.classList.add('--state-loaded');
+    },
+
+    create_external_links: function create_external_links() {
+
+        const host = window.location.hostname;
+        const internalLinks = document.querySelectorAll('a');
+
+        function check_url(url) {
+            if (/^https?:\/\//.test(url)) { // Absolute URL.
+                // The easy way to parse an URL, is to create <a> element.
+                // @see: https://gist.github.com/jlong/2428561
+                var parser = document.createElement('a');
+                parser.href = url;
+                return parser.hostname;
+            } else { // Relative URL.
+                return window.location.hostname;
+            }
+        }
+
+        internalLinks.forEach(function (link) {
+
+            var link_type = check_url(link);
+
+            if (link_type != host) {
+                link.setAttribute('target', '_blank');
+            }
+
+        });
+
     }
 
 }
