@@ -1,14 +1,27 @@
 .o-credits {
 
+    background-color: white;
+
     &.--type {
-        &-post {}
 
         &-site {
+
             display: none;
 
-            @include media('>medium') {
+            @include media('>small') {
                 display: block;
             }
+
+        }
+
+        &-post {
+
+            display: block;
+
+            @include media('>small') {
+                display: none;
+            }
+
         }
     }
 

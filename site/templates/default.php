@@ -40,6 +40,12 @@
                 </article>
             </div>
 
+            <div class="o-credits --type-post c-content__contents c-editor__output --style-half-height">
+                <div class="o-font --secondary u-font-tiny">
+                    <?php echo page('home')->page_credits()->kirbytextinline() ?>
+                </div>
+            </div>
+
         </div>
 
     </div>
